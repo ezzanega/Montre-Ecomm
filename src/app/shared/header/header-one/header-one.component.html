@@ -3,15 +3,24 @@
     [ngClass]="['header__area', transparent ? 'header__transparent' : '', header_big ? 'box-25' : !white_bg ? 'grey-bg' : '', sticky ? 'sticky' : '']" id="header-sticky">
     <div [ngClass]="header_big ? 'container-fluid' : 'container'">
       <div class="row align-items-center">
-        <div
+        <!-- <div
           [ngClass]="header_big ? 'col-xl-2 col-lg-2 col-md-4 col-sm-4 col-12' : 'col-xl-3 col-lg-3 col-md-4 col-sm-4'">
           <div class="logo">
             <a routerLink="/home/home-style-1">
               <img src="/assets/img/logo/logo.png" alt="logo">
             </a>
           </div>
-        </div>
+        </div> -->
+  <div
+    [ngClass]="header_big ? 'col-xl-2 col-lg-2 col-md-4 col-sm-4 col-12' : 'col-xl-3 col-lg-3 col-md-4 col-sm-4'">
 
+    <div class="logo">
+      <a routerLink="/home/home-style-1">
+        <img src="/assets/img/logo/logo-3.png" alt="logo" class="logo-img">
+      </a>
+    </div>
+
+  </div>
         <div
           [ngClass]="header_big ? 'col-xl-7 col-lg-6 col-md-2 col-sm-1 col-2' : 'col-xl-9 col-lg-9 col-md-8 col-sm-8'">
           <div class="header__right p-relative"
