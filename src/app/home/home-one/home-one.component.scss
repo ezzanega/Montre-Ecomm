@@ -74,7 +74,7 @@ $serif:       'Georgia', 'Times New Roman', serif;
 .slider__title {
   font-family: $serif;
   font-size: clamp(2.6rem, 5.5vw, 5rem);
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.05;
   color: $dark;
   letter-spacing: -0.01em;
@@ -248,4 +248,67 @@ $serif:       'Georgia', 'Times New Roman', serif;
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+.banner {
+    background: linear-gradient(135deg, #1a1208, #0a0a0a);
+    border-radius: var(--border-radius-lg);
+    padding: 40px 24px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.banner::before {
+    content: '⌚';
+    position: absolute;
+    font-size: 120px;
+    opacity: 0.06;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-title {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: $cream;
+}
+.banner-sub {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 24px;
+}
+.gold-accent {
+    color: #c69d41;
+}
+.contact-card {
+background: rgb(0 0 0 / 3%);
+    border: 0.5px solid #e3e3e3;
+    border-radius: 10px;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.contact-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+.contact-icon {
+    font-size: 20px;
+    margin-top: 2px;
+}
+.contact-label {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.contact-val {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 2px;
 }

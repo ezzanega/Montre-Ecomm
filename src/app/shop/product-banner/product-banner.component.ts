@@ -12,6 +12,20 @@ export class ProductBannerComponent {
   @Input() style_2: boolean = false;
   @Input() style_3: boolean = false;
 
+  banners = [
+  {
+    title: 'Montres pour Homme',
+    desc: 'Design puissant et élégant',
+    banner_img: 'assets/img/shop/banner/banner-6.png',
+    link: '/shop?category=homme'
+  },
+  {
+    title: 'Montres pour Femme',
+    desc: 'Raffinement et modernité',
+    banner_img: '/assets/img/shop/banner/banner-women.png',
+    link: '/shop?category=femme'
+  }
+];
   public bannerProducts: IProduct[] = [];
 
   constructor(private productService: ProductService) {

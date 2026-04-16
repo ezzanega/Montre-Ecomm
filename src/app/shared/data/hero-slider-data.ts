@@ -7,7 +7,7 @@ const hero_slider_one: IHeroSlider[] = [
     bgImg: '/assets/img/slider/banner-6.png',
     title: 'Handmade <br /> Hand carved Coffee',
     subtitle:
-      'As rich and unique as the coffee beans it is intended for, this little scoop will make your morning ritual a special occasion every day.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 2,

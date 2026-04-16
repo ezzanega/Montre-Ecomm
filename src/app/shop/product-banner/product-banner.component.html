@@ -2,25 +2,57 @@
 <div class="banner__area-2 pb-60">
   <div class="container-fluid p-0" [ngClass]="['container-fluid', style_2 ? '' : 'p-0']">
     <div class="row g-0">
-      @for (item of bannerProducts; track $index; let index = $index) {
-        <div class="col-xl-6 col-lg-6">
-          <div [ngClass]="['banner__item-2 p-relative mb-30',index === 0 ? 'banner-right pr-15' : 'banner-left pl-15']">
-            <div class="banner__thumb fix">
-              <a [routerLink]="['/shop/shop-details', item.id]" class="w-img">
-                <img [src]="item.banner_img" alt="banner">
+
+      @for (item of banners; track $index; let index = $index) {
+      <div class="col-xl-6 col-lg-6">
+
+        <div [ngClass]="['banner__item-2 p-relative mb-30',
+            index === 0 ? 'banner-right pr-15' : 'banner-left pl-15']">
+
+          <!-- IMAGE -->
+          <div class="banner__thumb fix banner-thumb-ratio">
+            <a [routerLink]="['/shop']" class="w-img">
+              <img [src]="item.banner_img" alt="banner">
+            </a>
+          </div>
+          <!-- CONTENT -->
+          <div [ngClass]="['banner__content-2',
+              style_3 ? 'banner__content-4' : '',
+              index !== 0 && style_3 ? 'banner__content-4-right' : '',
+              'p-absolute transition-3']">
+
+            <!-- LABEL -->
+            <span class="text-uppercase">
+              Collection {{ index === 0 ? 'Homme' : 'Femme' }}
+            </span>
+
+            <!-- TITLE -->
+            <h4>
+              <a [routerLink]="['/shop']">
+                {{ index === 0 ? 'Montres pour Homme' : 'Montres pour Femme' }}
               </a>
-            </div>
-            <div [ngClass]="['banner__content-2', style_3 ? 'banner__content-4' : '', index !== 0 && style_3 ? 'banner__content-4-right' : '', 'p-absolute transition-3']">
-              <span>Products {{item.category}}</span>
-              <h4><a [routerLink]="['/shop/shop-details', item.id]">{{item.title}}</a></h4>
-              <p [ngStyle]="{'max-width.px': style_3 ? 250 : 450}">{{ style_3 ? item.sm_desc.slice(0, 50) : item.sm_desc }}</p>
-              <a [routerLink]="['/shop/shop-details', item.id]" class="os-btn os-btn-2">buy now /
-                <span>${{item.price.toFixed(2)}}</span>
-              </a>
-            </div>
+            </h4>
+
+            <!-- DESCRIPTION -->
+            <p [ngStyle]="{'max-width.px': style_3 ? 250 : 450}">
+              {{
+              index === 0
+              ? 'Découvrez des montres pour homme au design puissant, élégant et intemporel.'
+              : 'Explorez des montres pour femme raffinées, modernes et sophistiquées.'
+              }}
+            </p>
+
+            <!-- BUTTON -->
+            <a [routerLink]="['/shop']" class="os-btn os-btn-2">
+              Découvrir la collection
+            </a>
+
           </div>
         </div>
+
+      </div>
       }
+
     </div>
   </div>
 </div>

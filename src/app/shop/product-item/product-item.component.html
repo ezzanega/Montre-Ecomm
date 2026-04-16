@@ -32,9 +32,9 @@
     <div class="product__content-inner">
       <h4><a [routerLink]="['/shop/shop-details', product.id]" [innerHTML]="product.title"></a></h4>
       <div class="product__price transition-3">
-        <span>${{product.price.toFixed(2)}}</span>
+        <span>MAD {{product.price.toFixed(2)}}</span>
         @if (product.old_price) {
-          <span class="old-price">${{product.old_price.toFixed(2)}}</span>
+          <span class="old-price">MAD {{product.old_price.toFixed(2)}}</span>
         }
       </div>
     </div>

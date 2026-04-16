@@ -13,7 +13,7 @@ const routes: Routes = [
   {
     path:'home-style-1',
     component:HomeOneComponent,
-    title:'Outstock - Clean, Minimal eCommerce Angular Template',
+    title:'Planète des Montres',
   },
   {
     path:'home-style-2',

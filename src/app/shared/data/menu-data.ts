@@ -4,23 +4,23 @@ const menuData:IMenuType[] = [
   {
     link: '/',
     title: 'Home',
-    hasDropdown: true,
+    hasDropdown: false,
     megamenu: false,
     dropdownItems: [
       { link: '/home/home-style-1', title: 'Home Style 1' },
-      { link: '/home/home-style-2', title: 'Home Style 2' },
-      { link: '/home/home-style-3', title: 'Home Style 3' },
-      { link: '/home/home-style-4', title: 'Home Style 4' },
-      { link: '/home/home-style-5', title: 'Home Style 5' },
-      { link: '/home/home-style-6', title: 'Home Style 6' },
-      { link: '/home/home-style-7', title: 'Home Style 7' },
+      // { link: '/home/home-style-2', title: 'Home Style 2' },
+      // { link: '/home/home-style-3', title: 'Home Style 3' },
+      // { link: '/home/home-style-4', title: 'Home Style 4' },
+      // { link: '/home/home-style-5', title: 'Home Style 5' },
+      // { link: '/home/home-style-6', title: 'Home Style 6' },
+      // { link: '/home/home-style-7', title: 'Home Style 7' },
     ]
   },
   {
     link: '/shop',
     title: 'Shop',
-    hasDropdown: true,
-    megamenu: true,
+    hasDropdown: false,
+    megamenu: false,
     dropdownItems: [
       {
         link: '/shop',
@@ -62,34 +62,38 @@ const menuData:IMenuType[] = [
       },
     ]
   },
-  {
-    link: '/pages/blog',
-    title: 'Blog',
-    hasDropdown: true,
-    megamenu: false,
-    dropdownItems: [
-      { link: '/pages/blog', title: 'Blog' },
-      { link: '/pages/blog-left-sidebar', title: 'Blog Left Sidebar' },
-      { link: '/pages/blog-no-sidebar', title: 'Blog No Sidebar' },
-      { link: '/pages/blog-2-col', title: 'Blog 2 Column' },
-      { link: '/pages/blog-3-col', title: 'Blog 3 Column' },
-      { link: '/pages/blog-details', title: 'Blog Details' },
-    ]
-  },
-  {
-    link: '/shop',
-    title: 'Pages',
-    hasDropdown: true,
-    megamenu: false,
-    dropdownItems: [
-      { link: '/shop/wishlist', title: 'Wishlist' },
-      { link: '/shop/cart', title: 'Shopping Cart' },
-      { link: '/pages/checkout', title: 'Checkout' },
-      { link: '/pages/account', title: 'Account' },
-      { link: '/pages/register', title: 'Register' },
-      { link: '/pages/login', title: 'Login' },
-      { link: '/404', title: 'Error 404' },
-    ]
+  // {
+  //   link: '/pages/blog',
+  //   title: 'Blog',
+  //   hasDropdown: true,
+  //   megamenu: false,
+  //   dropdownItems: [
+  //     { link: '/pages/blog', title: 'Blog' },
+  //     { link: '/pages/blog-left-sidebar', title: 'Blog Left Sidebar' },
+  //     { link: '/pages/blog-no-sidebar', title: 'Blog No Sidebar' },
+  //     { link: '/pages/blog-2-col', title: 'Blog 2 Column' },
+  //     { link: '/pages/blog-3-col', title: 'Blog 3 Column' },
+  //     { link: '/pages/blog-details', title: 'Blog Details' },
+  //   ]
+  // },
+  // {
+  //   link: '/shop',
+  //   title: 'Pages',
+  //   hasDropdown: true,
+  //   megamenu: false,
+  //   dropdownItems: [
+  //     { link: '/shop/wishlist', title: 'Wishlist' },
+  //     { link: '/shop/cart', title: 'Shopping Cart' },
+  //     { link: '/pages/checkout', title: 'Checkout' },
+  //     { link: '/pages/account', title: 'Account' },
+  //     { link: '/pages/register', title: 'Register' },
+  //     { link: '/pages/login', title: 'Login' },
+  //     { link: '/404', title: 'Error 404' },
+  //   ]
+  // },
+    {
+    link: '/pages/contact',
+    title: 'à Propos',
   },
   {
     link: '/pages/contact',

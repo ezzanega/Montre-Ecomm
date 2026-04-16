@@ -6,11 +6,14 @@
           <div class="footer__widget mb-30">
             <div class="footer__widget-title mb-25">
               <a routerLink="/home/home-style-1">
-                <img src="/assets/img/logo/logo-2.png" alt="logo">
+                <img src="/assets/img/logo/logo-6.png" alt="logo">
               </a>
             </div>
             <div class="footer__widget-content">
-              <p>Outstock is a premium Templates theme with advanced admin module. It’s extremely customizable, easy to use and fully responsive and retina ready.</p>
+              <p>
+                Montres de luxe, bijoux et lunettes d’exception.
+                Une sélection raffinée, livrée gratuitement partout au Maroc 🇲🇦.
+              </p>
               <div class="footer__contact">
                 <ul>
                   <li>
@@ -18,23 +21,25 @@
                       <i class="fal fa-map-marker-alt"></i>
                     </div>
                     <div class="text">
-                      <span>Add: 1234 Heaven Stress, Beverly Hill, Melbourne, USA.</span>
+                      <span>37 rue Oukeimden, Agdal, Rabat, Maroc</span>
                     </div>
                   </li>
+
                   <li>
                     <div class="icon">
-                      <i class="fal fa-envelope-open-text"></i>
+                      <i class="fab fa-whatsapp"></i>
                     </div>
                     <div class="text">
-                      <span>Email: Contact&#64;basictheme.com</span>
+                      <span>WhatsApp : 06 XX XX XX XX</span>
                     </div>
                   </li>
+
                   <li>
                     <div class="icon">
-                      <i class="fal fa-phone-alt"></i>
+                      <i class="fal fa-shipping-fast"></i>
                     </div>
                     <div class="text">
-                      <span>Phone Number: (800) 123 456 789</span>
+                      <span>Livraison gratuite partout au Maroc</span>
                     </div>
                   </li>
                 </ul>
@@ -51,9 +56,7 @@
               <div class="footer__links">
                 <ul>
                   <li><a href="#">About Us</a></li>
-                  <li><a href="#">Careers</a></li>
                   <li><a href="#">Delivery Inforamtion</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
                   <li><a href="#">Terms & Condition</a></li>
                 </ul>
               </div>
@@ -70,9 +73,7 @@
                 <ul>
                   <li><a href="#">Shipping Policy</a></li>
                   <li><a href="#">Help & Contact Us</a></li>
-                  <li><a href="#">Returns & Refunds</a></li>
                   <li><a href="#">Online Stores</a></li>
-                  <li><a href="#">Terms & Conditions</a></li>
                 </ul>
               </div>
             </div>
@@ -83,26 +84,38 @@
   </div>
   <div class="footer__bottom">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
+
+        <!-- LEFT -->
         <div class="col-xl-6 col-lg-7">
           <div class="footer__copyright">
-            <p>Copyright © <a routerLink="/home/home-style-1">Outstock</a> all rights reserved. Powered by
-            <a routerLink="/home/home-style-1">Theme_pure</a>
-          </p>
+            <p>
+              © {{ currentYear }}
+              <a routerLink="/home/home-style-1">Planète des Montres</a>.
+              Tous droits réservés.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="col-xl-6 col-lg-5">
-        <div class="footer__social f-right">
-          <ul>
-            @for (item of social_links; track $index) {
+
+        <!-- RIGHT -->
+        <div class="col-xl-6 col-lg-5">
+          <div class="footer__social f-right">
+            <ul>
               <li>
-                <a [href]="item.link" target="_blank"><i [class]="item.icon"></i></a>
+                <a href="https://www.instagram.com/planete_des_montres" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
               </li>
-            }
-          </ul>
+              <li>
+                <a href="https://www.facebook.com/planeteMontresRabat/" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+
       </div>
     </div>
   </div>
-</div>
 </section>
