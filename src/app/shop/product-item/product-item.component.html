@@ -39,6 +39,9 @@
       </div>
     </div>
     <div class="add-cart p-absolute transition-3">
+             <a (click)="sendToWhatsApp()" class="cursor-pointer">
+          + Send wtp
+        </a>
       @if (!isItemInCart(product)) {
         <a (click)="addToCart(product)" class="cursor-pointer">
           + Add to Cart
